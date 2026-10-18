@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f0e7" name="theme-color"/>
+  <meta content="Discover cars, record sightings, and build your automotive collection." name="description"/>
+  <title>
+   Leaderboard | Curious Spotter
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body data-page="leaderboard">
+  <div class="top-strip">
+   A field guide for the automotive curious
+  </div>
+  <!-- Shared site header and navigation: edit this area for this page. -->
+  <header class="site-header">
+   <a aria-label="Curious Spotter home" class="logo" href="index.html">
+    <span class="logo-mark">
+     C
+    </span>
+    <span>
+     CURIOUS SPOTTER
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav" id="main-nav">
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="discover.html">
+       Discover
+      </a>
+     </li>
+     <li>
+      <a href="map.html">
+       Map
+      </a>
+     </li>
+     <li>
+      <a href="cardex.html">
+       My Cardex
+      </a>
+     </li>
+     <li>
+      <a href="saved.html">
+       Saved
+      </a>
+     </li>
+     <li>
+      <a href="leaderboard.html">
+       Leaderboard
+      </a>
+     </li>
+     <li>
+      <a href="profile.html">
+       Profile
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="header-actions">
+    <a class="btn" href="add-spot.html">
+     <span>
+      ＋
+     </span>
+     Spot a car
+    </a>
+    <span class="avatar">
+     YOU
+    </span>
+   </div>
+  </header>
+  <!-- Page-specific content: edit this area for this page. -->
+  <main class="container">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      The spotter community
+     </p>
+     <h1>
+      Leaderboard.
+     </h1>
+     <p>
+      Meet the collectors making every sighting count.
+     </p>
+    </div>
+    <select class="field">
+     <option>
+      This month
+     </option>
+     <option>
+      All time
+     </option>
+     <option>
+      This week
+     </option>
+    </select>
+   </div>
+   <div class="two-col">
+    <section class="panel">
+     <p class="eyebrow">
+      Top spotters &middot; sample data
+     </p>
+     <h2 style="font-family:'Playfair Display';font-size:27px">
+      Hall of fame
+     </h2>
+     <div class="rank-list">
+      <div class="rank-item">
+       <div class="rank-number">
+        01
+       </div>
+       <div class="avatar">
+        AM
+       </div>
+       <div class="rank-copy">
+        <strong>
+         Alex M.
+        </strong>
+        <small>
+         Luxembourg &middot; 42 spots
+        </small>
+       </div>
+       <div class="rank-points">
+        2,840 XP
+       </div>
+      </div>
+      <div class="rank-item">
+       <div class="rank-number">
+        02
+       </div>
+       <div class="avatar">
+        JR
+       </div>
+       <div class="rank-copy">
+        <strong>
+         Jamie R.
+        </strong>
+        <small>
+         Belgium &middot; 36 spots
+        </small>
+       </div>
+       <div class="rank-points">
+        2,410 XP
+       </div>
+      </div>
+      <div class="rank-item">
+       <div class="rank-number">
+        03
+       </div>
+       <div class="avatar">
+        NK
+       </div>
+       <div class="rank-copy">
+        <strong>
+         Noah K.
+        </strong>
+        <small>
+         Germany &middot; 29 spots
+        </small>
+       </div>
+       <div class="rank-points">
+        1,980 XP
+       </div>
+      </div>
+      <div class="rank-item">
+       <div class="rank-number">
+        04
+       </div>
+       <div class="avatar">
+        MV
+       </div>
+       <div class="rank-copy">
+        <strong>
+         Mia V.
+        </strong>
+        <small>
+         France &middot; 25 spots
+        </small>
+       </div>
+       <div class="rank-points">
+        1,720 XP
+       </div>
+      </div>
+     </div>
+    </section>
+    <aside class="panel">
+     <p class="eyebrow">
+      Your progress
+     </p>
+     <h2 style="font-family:'Playfair Display';font-size:30px">
+      Rookie Spotter
+     </h2>
+     <p class="muted">
+      Build your Cardex by sharing verified sightings.
+     </p>
+     <div class="notice" style="margin-top:20px">
+      Rankings are sample content. Real rankings require user accounts and a shared database.
+     </div>
+     <a class="btn" href="add-spot.html" style="margin-top:18px">
+      Add a sighting &nearrow;
+     </a>
+    </aside>
+   </div>
+  </main>
+  <!-- Shared footer: edit this area for this page. -->
+  <footer class="site-footer">
+   <p>
+    CURIOUS SPOTTER &middot; EVERY CAR HAS A STORY.
+   </p>
+   <p>
+    Built for the obsessed &middot; learning project
+   </p>
+  </footer>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

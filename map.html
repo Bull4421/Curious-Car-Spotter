@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f0e7" name="theme-color"/>
+  <meta content="Discover cars, record sightings, and build your automotive collection." name="description"/>
+  <title>
+   Spot Map | Curious Spotter
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body data-page="map">
+  <div class="top-strip">
+   A field guide for the automotive curious
+  </div>
+  <!-- Shared site header and navigation: edit this area for this page. -->
+  <header class="site-header">
+   <a aria-label="Curious Spotter home" class="logo" href="index.html">
+    <span class="logo-mark">
+     C
+    </span>
+    <span>
+     CURIOUS SPOTTER
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav" id="main-nav">
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="discover.html">
+       Discover
+      </a>
+     </li>
+     <li>
+      <a href="map.html">
+       Map
+      </a>
+     </li>
+     <li>
+      <a href="cardex.html">
+       My Cardex
+      </a>
+     </li>
+     <li>
+      <a href="saved.html">
+       Saved
+      </a>
+     </li>
+     <li>
+      <a href="leaderboard.html">
+       Leaderboard
+      </a>
+     </li>
+     <li>
+      <a href="profile.html">
+       Profile
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="header-actions">
+    <a class="btn" href="add-spot.html">
+     <span>
+      ＋
+     </span>
+     Spot a car
+    </a>
+    <span class="avatar">
+     YOU
+    </span>
+   </div>
+  </header>
+  <!-- Page-specific content: edit this area for this page. -->
+  <main class="container">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      Follow your curiosity
+     </p>
+     <h1>
+      Spot map.
+     </h1>
+     <p>
+      Discover where enthusiasts have found cars worth remembering.
+     </p>
+    </div>
+    <a class="btn btn-secondary" href="discover.html">
+     Browse list
+    </a>
+   </div>
+   <div class="filterbar">
+    <input class="search" id="map-search" placeholder="Search city or country"/>
+    <select>
+     <option>
+      Community map
+     </option>
+     <option>
+      My spots
+     </option>
+    </select>
+    <select>
+     <option>
+      All categories
+     </option>
+     <option>
+      Supercars
+     </option>
+     <option>
+      Classics
+     </option>
+     <option>
+      Performance
+     </option>
+    </select>
+   </div>
+   <div aria-label="Illustrative map preview" class="map-placeholder">
+    <span class="map-label" style="left:39%;top:25%">
+     Luxembourg City &middot; 3 spots
+    </span>
+    <button aria-label="Luxembourg City sightings" class="map-pin" data-map-go="" style="left:44%;top:39%">
+    </button>
+    <span class="map-label" style="left:16%;top:63%">
+     Esch-sur-Alzette
+    </span>
+    <button aria-label="Esch-sur-Alzette sightings" class="map-pin" data-map-go="" style="left:24%;top:60%">
+    </button>
+    <span class="map-label" style="left:70%;top:67%">
+     Trier &middot; 1 spot
+    </span>
+    <button aria-label="Trier sightings" class="map-pin" data-map-go="" style="left:72%;top:62%">
+    </button>
+    <a class="btn" href="add-spot.html" style="position:absolute;left:14px;bottom:14px">
+     ＋ Add a spot
+    </a>
+   </div>
+   <div class="map-legend">
+    <span>
+     ● Community sighting
+    </span>
+    <span>
+     ◎ Demo locations only
+    </span>
+   </div>
+   <div class="notice" style="margin-top:16px">
+    This is a map preview. To enable real streets, GPS and live pins, connect a mapping library and store user-approved coordinates.
+   </div>
+  </main>
+  <!-- Shared footer: edit this area for this page. -->
+  <footer class="site-footer">
+   <p>
+    CURIOUS SPOTTER &middot; EVERY CAR HAS A STORY.
+   </p>
+   <p>
+    Built for the obsessed &middot; learning project
+   </p>
+  </footer>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

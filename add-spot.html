@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f0e7" name="theme-color"/>
+  <meta content="Discover cars, record sightings, and build your automotive collection." name="description"/>
+  <title>
+   Spot a Car | Curious Spotter
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body data-page="add-spot">
+  <div class="top-strip">
+   A field guide for the automotive curious
+  </div>
+  <!-- Shared site header and navigation: edit this area for this page. -->
+  <header class="site-header">
+   <a aria-label="Curious Spotter home" class="logo" href="index.html">
+    <span class="logo-mark">
+     C
+    </span>
+    <span>
+     CURIOUS SPOTTER
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav" id="main-nav">
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="discover.html">
+       Discover
+      </a>
+     </li>
+     <li>
+      <a href="map.html">
+       Map
+      </a>
+     </li>
+     <li>
+      <a href="cardex.html">
+       My Cardex
+      </a>
+     </li>
+     <li>
+      <a href="saved.html">
+       Saved
+      </a>
+     </li>
+     <li>
+      <a href="leaderboard.html">
+       Leaderboard
+      </a>
+     </li>
+     <li>
+      <a href="profile.html">
+       Profile
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="header-actions">
+    <a class="btn" href="add-spot.html">
+     <span>
+      ＋
+     </span>
+     Spot a car
+    </a>
+    <span class="avatar">
+     YOU
+    </span>
+   </div>
+  </header>
+  <!-- Page-specific content: edit this area for this page. -->
+  <main class="container">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      Capture the moment
+     </p>
+     <h1>
+      Spot a car.
+     </h1>
+     <p>
+      Upload a photo, review the identification, and correct details if needed.
+     </p>
+    </div>
+   </div>
+   <form class="panel" id="spot-form">
+    <div class="form-grid">
+     <div class="form-field full">
+      <label for="photo">
+       1. Upload a clear car photo *
+      </label>
+      <div class="upload-box">
+       <p id="upload-label">
+        Choose a photo of the car
+       </p>
+       <input accept="image/*" id="photo" name="photo" required="" type="file"/>
+      </div>
+     </div>
+     <div class="form-field full">
+      <div class="ai-panel">
+       <div class="ai-head">
+        <span class="ai-icon">
+         AI
+        </span>
+        <div>
+         <strong>
+          Car identification assistant
+         </strong>
+         <p>
+          Photo recognition integration point
+         </p>
+        </div>
+       </div>
+       <p class="muted" style="margin-top:10px">
+        In this starter, the image detector is not connected yet. The app will never pretend a photo has been AI-identified when it has not. Enter or correct the car details below; a real vision model can be connected to this step later.
+       </p>
+       <button class="btn btn-secondary" id="analyze-button" type="button">
+        Check identification status
+       </button>
+       <div aria-live="polite" class="ai-result hidden" id="ai-result">
+       </div>
+      </div>
+     </div>
+     <div class="form-field">
+      <label for="make">
+       Manufacturer *
+      </label>
+      <input id="make" maxlength="50" name="make" placeholder="e.g. Mercedes-AMG" required=""/>
+     </div>
+     <div class="form-field">
+      <label for="model">
+       Model *
+      </label>
+      <input id="model" maxlength="60" name="model" placeholder="e.g. ONE" required=""/>
+     </div>
+     <div class="form-field">
+      <label for="year">
+       Year *
+      </label>
+      <input id="year" max="2035" min="1886" name="year" placeholder="e.g. 2023" required="" type="number"/>
+     </div>
+     <div class="form-field">
+      <label for="variant">
+       Version / trim
+      </label>
+      <input id="variant" name="variant" placeholder="e.g. Black Series, GT3 RS"/>
+     </div>
+     <div class="form-field">
+      <label for="city">
+       City
+      </label>
+      <input id="city" name="city" placeholder="e.g. Luxembourg City"/>
+     </div>
+     <div class="form-field">
+      <label for="country">
+       Country
+      </label>
+      <input id="country" name="country" placeholder="e.g. Luxembourg"/>
+     </div>
+     <div class="form-field full">
+      <label for="description">
+       Your story / notes
+      </label>
+      <textarea id="description" maxlength="500" name="description" placeholder="What made this sighting special?"></textarea>
+     </div>
+     <div class="form-field full">
+      <div class="ai-result hidden" id="car-facts">
+      </div>
+     </div>
+     <div class="form-field full">
+      <div class="notice">
+       <strong>
+        Anti-fake system:
+       </strong>
+       rarity and verification status are assigned from the app's car catalogue, not chosen by the user. Unmatched cars are marked &ldquo;Pending Verification&rdquo; until the catalogue or moderators confirm them. This demo stores data only in your browser; a real app needs server-side checks to prevent tampering.
+      </div>
+     </div>
+     <div class="form-field full">
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+       <button class="btn" type="submit">
+        Save sighting &nearrow;
+       </button>
+       <a class="btn btn-secondary" href="index.html">
+        Cancel
+       </a>
+      </div>
+     </div>
+    </div>
+   </form>
+  </main>
+  <!-- Shared footer: edit this area for this page. -->
+  <footer class="site-footer">
+   <p>
+    CURIOUS SPOTTER &middot; EVERY CAR HAS A STORY.
+   </p>
+   <p>
+    Built for the obsessed &middot; learning project
+   </p>
+  </footer>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

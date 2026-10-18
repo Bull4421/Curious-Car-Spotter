@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f0e7" name="theme-color"/>
+  <meta content="Discover cars, record sightings, and build your automotive collection." name="description"/>
+  <title>
+   Discover | Curious Spotter
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body data-page="discover">
+  <div class="top-strip">
+   A field guide for the automotive curious
+  </div>
+  <!-- Shared site header and navigation: edit this area for this page. -->
+  <header class="site-header">
+   <a aria-label="Curious Spotter home" class="logo" href="index.html">
+    <span class="logo-mark">
+     C
+    </span>
+    <span>
+     CURIOUS SPOTTER
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav" id="main-nav">
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="discover.html">
+       Discover
+      </a>
+     </li>
+     <li>
+      <a href="map.html">
+       Map
+      </a>
+     </li>
+     <li>
+      <a href="cardex.html">
+       My Cardex
+      </a>
+     </li>
+     <li>
+      <a href="saved.html">
+       Saved
+      </a>
+     </li>
+     <li>
+      <a href="leaderboard.html">
+       Leaderboard
+      </a>
+     </li>
+     <li>
+      <a href="profile.html">
+       Profile
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="header-actions">
+    <a class="btn" href="add-spot.html">
+     <span>
+      ＋
+     </span>
+     Spot a car
+    </a>
+    <span class="avatar">
+     YOU
+    </span>
+   </div>
+  </header>
+  <!-- Page-specific content: edit this area for this page. -->
+  <main class="container">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      Explore the community
+     </p>
+     <h1>
+      Discover cars.
+     </h1>
+     <p>
+      Search sightings, find rare machines, and learn more about each car.
+     </p>
+    </div>
+    <a class="btn" href="add-spot.html">
+     ＋ Add a spot
+    </a>
+   </div>
+   <div class="filterbar">
+    <input class="search" id="search" placeholder="Search make, model or location..." type="search"/>
+    <select id="make-filter">
+     <option value="">
+      All manufacturers
+     </option>
+     <option>
+      Porsche
+     </option>
+     <option>
+      Mercedes-AMG
+     </option>
+     <option>
+      McLaren
+     </option>
+     <option>
+      Jaguar
+     </option>
+     <option>
+      Ferrari
+     </option>
+     <option>
+      BMW
+     </option>
+     <option>
+      Lamborghini
+     </option>
+     <option>
+      Chevrolet
+     </option>
+     <option>
+      Audi
+     </option>
+    </select>
+    <select id="rarity-filter">
+     <option value="">
+      All rarity levels
+     </option>
+     <option>
+      Common
+     </option>
+     <option>
+      Uncommon
+     </option>
+     <option>
+      Rare
+     </option>
+     <option>
+      Very Rare
+     </option>
+     <option>
+      Ultra Rare
+     </option>
+     <option>
+      Legendary
+     </option>
+     <option>
+      Mythic
+     </option>
+     <option>
+      Pending Verification
+     </option>
+    </select>
+    <button class="btn btn-secondary" id="clear-filters" type="button">
+     Clear filters
+    </button>
+   </div>
+   <div class="car-grid" id="car-grid">
+   </div>
+  </main>
+  <!-- Shared footer: edit this area for this page. -->
+  <footer class="site-footer">
+   <p>
+    CURIOUS SPOTTER &middot; EVERY CAR HAS A STORY.
+   </p>
+   <p>
+    Built for the obsessed &middot; learning project
+   </p>
+  </footer>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+
